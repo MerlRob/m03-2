@@ -9,12 +9,12 @@ package ClaseFigura;
  *
  * @author Mer
  */
-public class Circulo extends Figura {
-    private int radio;
+public class Circulo  {
+    private double radio;
     
     public Circulo(Punto origen, int radio)
     {
-        super(origen);
+        origen=origen;
         this.radio= radio;
     }
     
@@ -23,29 +23,24 @@ public class Circulo extends Figura {
     {
     return this.radio;
     }
-    public void setRadio(int radio)
+    public void setRadio(double radio)
     {
     this.radio= radio;
     }
-    public double Area()
-    {
-    return Math.PI*Math.pow(this.radio, 2);
-    }
-    public double Perimetro()
-    {
-    return 2*Math.PI*this.radio;
-    }
-    public double escalar(int radio)
-    {
-            return this.radio = radio;}
-
-    @Override
-    public void Escalr(double porcentaje) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String aCadena() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+//    @Override
+//    public double Area()
+//    {
+//    return Math.PI*Math.pow(this.radio, 2);
+//    }
+//    @Override
+//    public double Perimetro()
+//    {
+//    return 2*Math.PI*this.radio;
+//    }  
+//
+//    @Override
+//    public String toString() {
+//        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+//    }
+//    
 }

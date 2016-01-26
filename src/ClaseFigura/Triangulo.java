@@ -9,7 +9,7 @@ package ClaseFigura;
  *
  * @author Mer
  */
-public class Triangulo extends Figura{
+public class Triangulo extends Figura implements imprimir {
     
     
     private int base;

@@ -8,7 +8,7 @@ package ClaseFigura;
  *
  * @author Mer
  */
-public abstract class Figura {
+public abstract class Figura  {
     protected Punto origen;
     private static int numFiguras =0;
     
@@ -43,10 +43,11 @@ public abstract class Figura {
        return Figura.numFiguras;
        
        }
+      
        public abstract double Area();
        public abstract double Perimetro();
        public abstract void Escalr (double n);
        public abstract String aCadena();
        
-  
+   
 }

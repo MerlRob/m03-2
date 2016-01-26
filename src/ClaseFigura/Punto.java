@@ -9,10 +9,10 @@ package ClaseFigura;
  *
  * @author Mer
  */
-public class Punto {
+public class Punto implements imprimir{
   
-    private double x;
-    private double y;
+    protected double x;
+    protected double y;
     public Punto()
     {
     this.x=0;
@@ -41,7 +41,7 @@ public class Punto {
     this.y = y;
     }
     
-    public void desplazar(int x, int y)
+    public void desplazar(double x, double y)
     {
     this.x = this.x + x;
     this.y = this.y + y;
